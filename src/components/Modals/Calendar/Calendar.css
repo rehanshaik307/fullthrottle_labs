@@ -1,0 +1,161 @@
+#calendar {   
+    background-color: #fff;
+    height: 600px;    
+    width: 90%;    
+    right: 5%;
+    top: 10%;
+    position: fixed;
+    z-index: 400;   
+    overflow-y: scroll;
+    transition: all 1s ease;    
+}
+
+.close-cal-btn {    
+    border: none;    
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 5px 10px 5px 10px;        
+    background-color: #937be0;
+    border-radius: 2px;  
+    color: #fff; 
+    outline: none;
+    cursor: pointer; 
+    margin-top: 20px;    
+}
+
+.display-calendar {
+    display: flex;     
+    justify-content: flex-start;      
+    flex-wrap: wrap;
+}
+.calendar-flex-item {      
+    width: 22%;
+    height: 300px;
+    margin-top: 50px;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+@media (max-width: 1000px) {
+    .calendar {
+        width: 550px;                
+        left: calc(80% -250px);
+    }
+    .calendar-flex-item {
+        width: 30%;        
+    }
+}
+
+@media (max-width: 800px) {
+    .display-calendar {
+        justify-content: center;
+    }
+}
+@media (max-width: 600px) {
+    .calendar-flex-item {
+        width: 100%;      
+    }
+}
+
+.cal-disp {
+    height: 0.05px; 
+    margin-left: 17%;    
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 0.05px solid #ffffff;      
+}
+
+.violet{        
+    background-color: #937be0;
+    border: 0.05px solid #937be0;
+}
+
+.cal-disp:nth-of-type(2)::before,
+.cal-disp:nth-of-type(61)::before,
+.cal-disp:nth-of-type(121)::before,
+.cal-disp:nth-of-type(181)::before,
+.cal-disp:nth-of-type(241)::before,
+.cal-disp:nth-of-type(301)::before,
+.cal-disp:nth-of-type(361)::before,
+.cal-disp:nth-of-type(421)::before,
+.cal-disp:nth-of-type(481)::before,
+.cal-disp:nth-of-type(541)::before,
+.cal-disp:nth-of-type(601)::before,
+.cal-disp:nth-of-type(661)::before,
+.cal-disp:nth-of-type(721)::before,
+.cal-disp:nth-of-type(781)::before,
+.cal-disp:nth-of-type(841)::before,
+.cal-disp:nth-of-type(901)::before,
+.cal-disp:nth-of-type(961)::before,
+.cal-disp:nth-of-type(1021)::before,
+.cal-disp:nth-of-type(1081)::before,
+.cal-disp:nth-of-type(1141)::before,
+.cal-disp:nth-of-type(1201)::before,
+.cal-disp:nth-of-type(1261)::before,
+.cal-disp:nth-of-type(1321)::before,
+.cal-disp:nth-of-type(1381)::before,
+.cal-disp:nth-of-type(1440)::before { 
+        color: #937be0;
+        display: inline-block;
+        padding-top: 0px;
+        margin-top: -10px;
+        margin-left: -120%;        
+        font-size: 10px;  
+        overflow-y: scroll;      
+}
+
+/* Styling for every number  */
+.cal-disp:nth-of-type(2)::before{content: '00';}
+.cal-disp:nth-of-type(61)::before{content: '01';}
+.cal-disp:nth-of-type(121)::before{content: '02';}
+.cal-disp:nth-of-type(181)::before{content: '03';}
+.cal-disp:nth-of-type(241)::before{content: '04';}
+.cal-disp:nth-of-type(301)::before{content: '05';}
+.cal-disp:nth-of-type(361)::before{content: '06';}
+.cal-disp:nth-of-type(421)::before{content: '07';}
+.cal-disp:nth-of-type(481)::before{content: '08';}
+.cal-disp:nth-of-type(541)::before{content: '09';}
+.cal-disp:nth-of-type(601)::before{content: '10';}
+.cal-disp:nth-of-type(661)::before{content: '11';}
+.cal-disp:nth-of-type(721)::before{content: '12';}
+.cal-disp:nth-of-type(781)::before{content: '13';}
+.cal-disp:nth-of-type(841)::before{content: '14';}
+.cal-disp:nth-of-type(901)::before{content: '15';}
+.cal-disp:nth-of-type(961)::before{content: '16';}
+.cal-disp:nth-of-type(1021)::before{content: '17';}
+.cal-disp:nth-of-type(1081)::before{content: '18';}
+.cal-disp:nth-of-type(1141)::before{content: '19';}
+.cal-disp:nth-of-type(1201)::before{content: '20';}
+.cal-disp:nth-of-type(1261)::before{content: '21';}
+.cal-disp:nth-of-type(1321)::before{content: '22';}
+.cal-disp:nth-of-type(1381)::before{content: '23';}
+
+
+/* Border after every 60 rows */
+.cal-disp:nth-of-type(60),
+.cal-disp:nth-of-type(120),
+.cal-disp:nth-of-type(180),
+.cal-disp:nth-of-type(240),
+.cal-disp:nth-of-type(300),
+.cal-disp:nth-of-type(360),
+.cal-disp:nth-of-type(420),
+.cal-disp:nth-of-type(480),
+.cal-disp:nth-of-type(540),
+.cal-disp:nth-of-type(600),
+.cal-disp:nth-of-type(660),
+.cal-disp:nth-of-type(720),
+.cal-disp:nth-of-type(780),
+.cal-disp:nth-of-type(840),
+.cal-disp:nth-of-type(900),
+.cal-disp:nth-of-type(960),
+.cal-disp:nth-of-type(1020),
+.cal-disp:nth-of-type(1080),
+.cal-disp:nth-of-type(1140),
+.cal-disp:nth-of-type(1200),
+.cal-disp:nth-of-type(1260),
+.cal-disp:nth-of-type(1320),
+.cal-disp:nth-of-type(1380),
+.cal-disp:nth-of-type(1440)
+{
+    border-bottom: 2px solid #f2f2f2;    
+}

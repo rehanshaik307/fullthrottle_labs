@@ -1,0 +1,68 @@
+.modal {    
+    background-color: #fff;
+    height: 400px;    
+    width: 400px;        
+    right: 5%;
+    top: 17%;
+    position: fixed;
+    z-index: 400;   
+    overflow-y: scroll;
+    transition: all 1s ease;              
+}
+#modal-heading {    
+    display: flex;
+    justify-content: space-around;    
+    background-color: #937be0;    
+}
+
+#modal-heading p {    
+    color: #fff;    
+}
+
+.modal-data-flex {    
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: #464647;     
+    box-shadow: 2px 2px 4px 1px rgba(147, 123, 224,0.25);    
+}
+.modal-data-flex > p {
+    padding-left: 20px;    
+}
+
+.modal-data-flex  div { 
+    padding-right: 20px;
+}
+
+.close {    
+    border: none;    
+    font-size: 25px;
+    margin: 10px 0px;
+    padding: 0px 10px 5px 10px;        
+    background-color: #fff;
+    border-radius: 2px;  
+    color: #937be0; 
+    outline: none;
+    cursor: pointer;     
+}
+
+@media (max-width: 600px) {
+    .modal {
+        width: 90%;        
+        left: 30px;        
+    }
+}
+
+.calendar-btn {
+    border: none;    
+    font-size: 18px;
+    margin: 10px 0px;
+    background-color: #fff;
+    border-radius: 2px;  
+    color: #937be0; 
+    outline: none;
+    cursor: pointer;
+    font-weight: 400;
+}
