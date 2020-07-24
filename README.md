@@ -1,11 +1,11 @@
-Live link to view project demo [User Statistics](https://fulltrottlelabs-assignment.herokuapp.com/)
+Live link to view project demo [Assignment link](https://fulltrottlelabs-assignment.herokuapp.com/)
 
 
 ### To install packages
 Navigate to project directory <br />
 
 ```sh
-$ cd user-statistics
+$ cd fullthrottle_labs
 ```
 Run the below command
 
